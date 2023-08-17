@@ -7,6 +7,13 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body class="max-w-screen-xl mx-auto mt-5 p-5 border border-black">
@@ -27,14 +34,14 @@
                         <h2 class="card-title">Triangle</h2>
                         <p class="text-xl">Area (A) = 0.5 X h X w</p>
                         <div class="flex gap-5 items-center">
-                            <input type="text" id="triangle-height"
+                            <input type="number" id="triangle-height"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="height">
                             <span class="">h</span>
-                            <input type="text" id="triangle-width"
+                            <input type="number" id="triangle-width"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="width">
                             <span class="">w</span>
                         </div>
-                        <p>Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
+                        <p>Area: <span id="triangle-area" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
                             <button onclick="triangleArea()"
                                 class="btn btn-primary w-full text-white font-semibold">Calculate</button>
@@ -50,16 +57,17 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p class="text-xl">Area (A) = w X l</p>
                         <div class="flex gap-5 items-center">
-                            <input type="text" id="rectangle-width"
+                            <input type="number" id="rectangle-width"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="height">
                             <span class="">w</span>
-                            <input type="text" id="rectangle-length"
+                            <input type="number" id="rectangle-length"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="width">
                             <span class="">l</span>
                         </div>
-                        <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+                        <p>Area: <span id="rectangle-area" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
-                            <button class="btn btn-primary w-full text-white font-semibold">Calculate</button>
+                            <button onclick="rectangleArea()"
+                                class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -72,14 +80,14 @@
                         <h2 class="card-title">Parallelogram</h2>
                         <p class="text-xl">Area (A) = b X h</p>
                         <div class="flex gap-5 items-center">
-                            <input type="text" id="parallelogram-base"
+                            <input type="number" id="parallelogram-base"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="height">
                             <span class="">b</span>
-                            <input type="text" id="parallelogram-height"
+                            <input type="number" id="parallelogram-height"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="width">
                             <span class="">h</span>
                         </div>
-                        <p>Area: <span id="parallelogram-area">0</span> cm<sup>2</sup></p>
+                        <p>Area: <span id="parallelogram-area" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
                             <button class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
@@ -92,6 +100,7 @@
     </main>
 
     <script src="js/triangle-area.js"></script>
+    <script src="js/rectangle-area.js"></script>
 </body>
 
 </html>
