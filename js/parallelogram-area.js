@@ -7,5 +7,5 @@ function parallelogramArea(){
         return;
     }
     const area = base * height;
-    setElementText('')
+    setElementText('parallelogram-area', area);
 }
