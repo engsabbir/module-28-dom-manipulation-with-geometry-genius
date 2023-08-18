@@ -7,6 +7,6 @@ function ellipseArea() {
         return;
     }
 
-    const area = 3.1416 * axisA * axisB;
+    const area = (Math.PI * axisA * axisB).toFixed(2);
     setElementText('ellipse-area', area)
 }
