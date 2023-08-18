@@ -7,7 +7,9 @@ function rectangleArea() {
         alert('Please provide a valid number');
         return;
     }
-    
+
     const area = width * height;
-    setElementText('rectangle-area', area)
+    setElementText('rectangle-area', area);
+
+    setCalculationData('Rectangle', area);
 }

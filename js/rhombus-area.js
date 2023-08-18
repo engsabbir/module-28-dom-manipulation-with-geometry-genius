@@ -3,10 +3,12 @@ function rhombusArea() {
     const secondValue = getInputValue('rhombus-diagonal2');
 
     if (isNaN(firstValue) || isNaN(secondValue)) {
-        alert('Please provide a valid number.')
+        alert('Please provide a valid number.');
         return;
     }
 
     const area = firstValue * secondValue;
     setElementText('rhombus-area', area);
+
+    setCalculationData('Rhombus', area);
 }

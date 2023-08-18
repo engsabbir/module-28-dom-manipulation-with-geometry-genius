@@ -8,5 +8,7 @@ function ellipseArea() {
     }
 
     const area = (Math.PI * axisA * axisB).toFixed(2);
-    setElementText('ellipse-area', area)
+    setElementText('ellipse-area', area);
+
+    setCalculationData('Ellipse', area);
 }

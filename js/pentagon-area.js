@@ -9,4 +9,6 @@ function pentagonArea() {
 
     const area = 0.5 * perimeter * apothem;
     setElementText('pentagon-area', area);
+
+    setCalculationData('Pentagon', area);
 }

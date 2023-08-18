@@ -99,7 +99,8 @@
                         </div>
                         <p class="font-bold">Area: <span id="parallelogram-area" class="">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
-                            <button onclick="parallelogramArea()" class="btn btn-primary w-full text-white font-semibold">Calculate</button>
+                            <button onclick="parallelogramArea()"
+                                class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -113,15 +114,18 @@
                         <p class="text-xl">Area (A) = d<sub>1</sub> X d<sub>2</sub></p>
                         <div class="flex gap-5 items-center">
                             <input type="number" id="rhombus-diagonal1"
-                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="diagonal1">
+                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3"
+                                placeholder="diagonal1">
                             <span class="">d<sub>1</sub></span>
                             <input type="number" id="rhombus-diagonal2"
-                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="diagonal2">
+                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3"
+                                placeholder="diagonal2">
                             <span class="">d<sub>2</sub></span>
                         </div>
                         <p class="font-bold">Area: <span id="rhombus-area" class="">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
-                            <button onclick="rhombusArea()" class="btn btn-primary w-full text-white font-semibold">Calculate</button>
+                            <button onclick="rhombusArea()"
+                                class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,7 +139,8 @@
                         <p class="text-xl">Area (A) = 0.5 X p X a</p>
                         <div class="flex gap-5 items-center">
                             <input type="number" id="pentagon-perimeter"
-                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="perimeter">
+                                class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3"
+                                placeholder="perimeter">
                             <span class="">p</span>
                             <input type="number" id="pentagon-apothem"
                                 class="px-4 py-2 bg-gray-200 rounded-md focus:outline-none w-1/3" placeholder="apothem">
@@ -143,7 +148,8 @@
                         </div>
                         <p class="font-bold">Area: <span id="pentagon-area" class="">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
-                            <button onclick="pentagonArea()" class="btn btn-primary w-full text-white font-semibold">Calculate</button>
+                            <button onclick="pentagonArea()"
+                                class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -165,7 +171,8 @@
                         </div>
                         <p class="font-bold">Area: <span id="ellipse-area" class="">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full mt-5">
-                            <button onclick="ellipseArea()" class="btn btn-primary w-full text-white font-semibold">Calculate</button>
+                            <button onclick="ellipseArea()"
+                                class="btn btn-primary w-full text-white font-semibold">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +181,7 @@
         <!-- area calculation section  -->
         <section class=" w-5/6 md:w-3/5 lg:w-1/4 mx-auto">
             <h2 class="text-2xl text-center font-medium">Area Calculator</h2>
-            <div></div>
+            <div id="calculation-section" class="grid gap-y-2"></div>
         </section>
     </main>
 
